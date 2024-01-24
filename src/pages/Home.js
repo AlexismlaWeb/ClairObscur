@@ -1,28 +1,27 @@
 import React from 'react'
 import Header from '../components/layouts/Header'
 import { Row } from 'react-bootstrap'
+import AnimatedItem from '../components/AnimatedItem'
 
 const Home = () => {
 
     return (
         <div>
+            {/* 
+            <Row className='d-flex align-items-center justify-content-center'>
+                <AnimatedItem image={'vrtist1.svg'} details={'DIOR, Life Is Short'} />
+            </Row>
+            <Row className='d-flex align-items-center justify-content-center'>
+            <AnimatedItem image={'vrtist2.svg'} details={'DIOR, Life Is Short'} />
+            </Row>
+            <Row className='d-flex align-items-center justify-content-center'>
+            <AnimatedItem image={'vrtist3.svg'} details={'DIOR, Life Is Short'} />
+            </Row>
+            <Row className='d-flex align-items-center justify-content-center'>
+            <AnimatedItem image={'vrtist4.svg'} details={'DIOR, Life Is Short'} />
+            </Row> */}
             <Header absolute={true}/>
-            <Row className='d-flex align-items-center justify-content-center'>
-                <img src='vrtist1.svg' alt='dior'/>
-                <div style={{position : 'absolute'}}>
-                <h2>DIOR</h2>
-                <h1>Life Is Short </h1>
-                </div>
-            </Row>
-            <Row className='d-flex align-items-center justify-content-center'>
-            <img src='vrtist2.svg' alt='dior'/>
-            </Row>
-            <Row className='d-flex align-items-center justify-content-center'>
-            <img src='vrtist3.svg' alt='dior'/>
-            </Row>
-            <Row className='d-flex align-items-center justify-content-center'>
-            <img src='vrtist4.svg' alt='dior'/>
-            </Row>
+            <AnimatedItem items={['vrtist4.svg','vrtist3.svg','vrtist2.svg','vrtist1.svg']} />
         </div>
     )}
 

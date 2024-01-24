@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Assurez-vous d'importer les st
 import Home from './pages/Home';
 import EquipePage from './pages/EquipePage';
 import PartenairesPage from './pages/PartenairesPage';
+import ContactPage from './pages/ContactPage';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Route path="/" Component={Home} />
           <Route path="/partenaires" Component={PartenairesPage} />
           <Route path="/notre-equipe" Component={EquipePage} />
+          <Route path="/contact" Component={ContactPage} />
         </Routes>
     </Router>
   );
