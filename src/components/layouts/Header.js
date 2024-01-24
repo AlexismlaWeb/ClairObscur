@@ -51,8 +51,8 @@ const Header = ({ absolute }) => {
           {isMobileView ? (
             // Affiche le bouton de menu ou le logo en fonction de la largeur de l'écran
             <div className="d-flex justify-content-end">
-              <Dropdown show={isMenuOpen} onToggle={handleMenuToggle} align="end">
-                <Dropdown.Toggle as={Button} variant="outline-light" id="dropdown-basic">
+              <Dropdown show={isMenuOpen} onToggle={handleMenuToggle} align="end" data-bs-theme="dark">
+                <Dropdown.Toggle as={Button} variant="dark" id="dropdown-basic" style={{ paddingRight: '0' }}>
                 <FaBars size={25} onClick={handleMenuToggle} style={{ cursor: 'pointer' }} />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
