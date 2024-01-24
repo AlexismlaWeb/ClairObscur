@@ -21,8 +21,8 @@ const Header = ({ absolute }) => {
   return (
     <div className="menu-body" style={MenuStyle}>
       <Row className="align-items-center">
-        <Col md={2} onClick={() => handleNavigation('/')}>
-          <img src="CO_BLANC_SF.png" alt="logo" style={{ width: '100%', cursor: 'pointer' }} />
+        <Col sm={2} onClick={() => handleNavigation('/')}>
+          <img src='./CO_Blanc_SF.png' alt="logo" style={{ width: '100%', cursor: 'pointer' }} />
         </Col>
         <Col md={{ span: 9, offset: 1 }}>
           <ul>
