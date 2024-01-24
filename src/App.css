@@ -27,6 +27,7 @@ li:last-child {
     height: 14vh;
     margin: 20px;
     font-weight: 700;
+    width: 100%;
 }
 
 .list-item img{
