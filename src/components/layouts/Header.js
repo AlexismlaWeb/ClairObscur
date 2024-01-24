@@ -41,6 +41,9 @@ const Header = ({ absolute }) => {
             >
               Notre équipe
             </li>
+            <li onClick={() => handleNavigation('/contact')} style={{ opacity: activePage === '/' ? 1 : 0.5 }}>
+              Contact
+            </li>
           </ul>
         </Col>
       </Row>

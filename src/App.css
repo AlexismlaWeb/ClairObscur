@@ -28,10 +28,23 @@ li:last-child {
     margin: 20px;
     font-weight: 700;
     width: 100%;
+    z-index: 1000;
 }
 
 .list-item img{
   width: 100%;
   min-height: 70%;
   max-height: 70%;
+}
+
+.footer-body{
+  width: 100%;
+}
+
+.center_logo{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-block-start: 2%;
+  margin-block-end: 1%;
 }

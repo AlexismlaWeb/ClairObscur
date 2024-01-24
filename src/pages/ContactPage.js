@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/layouts/Header'
+import Footer from '../components/layouts/Footer'
 import { Row,Col } from 'react-bootstrap'
 
 const ContactPage = () => {
@@ -33,6 +34,9 @@ const ContactPage = () => {
                 </Col>
             </Row>
             </Row>
+            <div style={{ marginBlockStart : '3%'}}>
+            <Footer/>
+            </div>
         </div>
     )}
 
