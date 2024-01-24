@@ -25,7 +25,6 @@ li:last-child {
 
 .menu-body{
     height: 14vh;
-    display: flex;
     margin: 20px;
     font-weight: 700;
 }
