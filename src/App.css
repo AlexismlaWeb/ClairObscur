@@ -39,6 +39,7 @@ li:last-child {
 
 .footer-body{
   width: 100%;
+  padding: 4%;
 }
 
 .center_logo{
@@ -47,4 +48,10 @@ li:last-child {
   display: flex;
   margin-block-start: 2%;
   margin-block-end: 1%;
+}
+
+.custom-dropdown-menu {
+  right: 100%; /* Décale le menu à gauche du bouton */
+  left: auto; /* Désactive le positionnement par défaut à gauche */
+  top: 0%;
 }
