@@ -55,3 +55,38 @@ li:last-child {
   left: auto; /* Désactive le positionnement par défaut à gauche */
   top: 0%;
 }
+
+.list-item.active{
+  cursor: pointer;
+}
+
+.list-item.next {
+  /* autres styles pour .list-item.inactive si nécessaire */
+  transform: scaleY(0.9) !important; /* Réduit la hauteur à 80% */
+  transition: transform 0.5s;
+  transform-origin: bottom;
+}
+.list-item.previous {
+  /* autres styles pour .list-item.inactive si nécessaire */
+  transform: scaleY(0.9) !important; /* Réduit la hauteur à 80% */
+  transition: transform 0.5s;
+  transform-origin: top;
+}
+
+.list-item.inactive{
+  scale: 1;
+}
+
+.text-overlay {
+  position: absolute; /* Positionnement absolu pour superposer sur l'image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; /* Choisissez une couleur contrastante pour le texte */
+  /* Ajoutez d'autres styles pour le texte si nécessaire */
+}

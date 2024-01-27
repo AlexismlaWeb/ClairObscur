@@ -7,11 +7,11 @@ const ContactPage = () => {
   return (
     <div>
       <Header />
-      <Row className="mt-5">
+      <Row className="">
         <h1 className="text-center">CONTACTEZ NOUS</h1>
       </Row>
       <Row className="d-flex justify-content-center align-items-center mb-5 mt-5">
-        <Col sm={4} class="form-group">
+        <Col xs={10} sm={8}>
           <input
             type="text"
             className="form-control"
@@ -19,7 +19,9 @@ const ContactPage = () => {
             placeholder="Nom"
           />
         </Col>
-        <Col sm={4}>
+      </Row>
+      <Row className="d-flex justify-content-center align-items-center mb-5 mt-5">
+        <Col xs={10} sm={8}>
           <input
             type="text"
             className="form-control"
@@ -29,7 +31,7 @@ const ContactPage = () => {
         </Col>
       </Row>
       <Row className="d-flex justify-content-center align-items-center">
-        <Col sm={9}>
+        <Col xs={10} sm={8}>
           <input
             type="email"
             className="form-control"
@@ -39,15 +41,16 @@ const ContactPage = () => {
         </Col>
       </Row>
       <Row className="mt-5 d-flex justify-content-center align-items-center">
-        <Col md={9}>
+        <Col xs={10} sm={8}>
           <h3 className="">VOTRE PROJET</h3>
         </Col>
         <Row className="mt-4 d-flex justify-content-center align-items-center">
-          <Col md="9">
+          <Col xs={10} sm={8}>
             <textarea
               className="form-control"
               id="FormControlTextarea"
               rows="6"
+              placeholder="Comment pouvons-nous vous aider ?"
             ></textarea>
           </Col>
         </Row>
