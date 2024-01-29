@@ -42,7 +42,7 @@ const Header = ({ absolute }) => {
     <div className="menu-body" style={MenuStyle}>
       <Row className="align-items-center">
         {/* Logo à gauche */}
-        <Col xs={3} md={2} onClick={() => handleNavigation("/")}>
+        <Col xs={4} md={2} onClick={() => handleNavigation("/")}>
           <img
             src="./CO_Blanc_SF.png"
             alt="logo"
@@ -51,10 +51,10 @@ const Header = ({ absolute }) => {
         </Col>
 
         {/* Menu à droite */}
-        <Col xs={8} md={{ span: 9, offset: 1 }}>
+        <Col xs={{ offset: 1, span: 7 }} md={{ span: 9, offset: 1 }}>
           {isMobileView ? (
             // Affiche le bouton de menu ou le logo en fonction de la largeur de l'écran
-            <div className="d-flex justify-content-end">
+            <div className="d-flex justify-content-end me-3">
               <Dropdown
                 show={isMenuOpen}
                 onToggle={handleMenuToggle}
@@ -63,7 +63,7 @@ const Header = ({ absolute }) => {
                 drop="end"
               >
                 <Button
-                  variant="dark"
+                  variant="white"
                   id="dropdown-basic"
                   data-toggle="dropdown"
                 >

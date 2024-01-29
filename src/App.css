@@ -24,9 +24,9 @@ li:last-child {
 }
 
 .menu-body{
-    height: 14vh;
-    margin: 20px;
+    height: 10vh;
     font-weight: 700;
+    margin-top: 3%;
     width: 100%;
     z-index: 1000;
 }
@@ -51,9 +51,9 @@ li:last-child {
 }
 
 .custom-dropdown-menu {
-  right: 100%; /* Décale le menu à gauche du bouton */
+  right: 0%; /* Décale le menu à gauche du bouton */
   left: auto; /* Désactive le positionnement par défaut à gauche */
-  top: 0%;
+  /* top: 0%; */
 }
 
 .list-item.active{
@@ -89,4 +89,22 @@ li:last-child {
   flex-direction: column;
   color: white; /* Choisissez une couleur contrastante pour le texte */
   /* Ajoutez d'autres styles pour le texte si nécessaire */
+}
+
+.team-member-name {
+  font-size: 1.5rem; /* Taille de base */
+}
+
+.team-member-description {
+  font-size: 1rem; /* Taille de base */
+}
+
+@media (max-width: 768px) {
+  .team-member-name {
+    font-size: 1.2rem; /* Plus petite sur les écrans réduits */
+  }
+
+  .team-member-description {
+    font-size: 0.5rem; /* Plus petite sur les écrans réduits */
+  }
 }
