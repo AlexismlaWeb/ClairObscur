@@ -23,6 +23,14 @@ li:last-child {
   margin-right: 0;
 }
 
+
+@media (max-width: 768px) {
+.menu-body{
+  position: relative  !important;
+  height: 7.5vh !important;
+}
+}
+
 .menu-body{
     height: 10vh;
     font-weight: 700;
