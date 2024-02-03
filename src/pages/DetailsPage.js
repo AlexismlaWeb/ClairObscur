@@ -36,6 +36,7 @@ const DetailsPage = () => {
                 src={item.video}
                 autoPlay
                 muted
+                playsinline
               ></video>
             ) : null
           ) : null}
