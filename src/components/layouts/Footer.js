@@ -21,12 +21,12 @@ const Footer = () => {
       <Row className="justify-content-center">
         <Col xs={2} sm={1} className="center_logo">
           {/* Logo pour Instagram */}
-          <FaInstagram size={20} style={{ cursor: "pointer" }} />
+          <FaInstagram size={21} style={{ cursor: "pointer" }} />
         </Col>
         <Col xs={2} sm={1} className="center_logo">
           {/* Logo pour le contact */}
           <FaEnvelope
-            size={20}
+            size={21}
             onClick={() => navigate("/contact")}
             style={{ cursor: "pointer" }}
           />

@@ -26,7 +26,9 @@ const TeamMember = ({ photoPosition, name, description, image }) => {
         xs={photoPosition === "center" ? 12 : 8}
       >
         <h1 className="team-member-name">{name}</h1>
-        <p className="team-member-description">{description}</p>
+        <p className="team-member-description" style={{ textAlign: "justify" }}>
+          {description}
+        </p>
       </Col>
 
       {photoPosition === "right" && (

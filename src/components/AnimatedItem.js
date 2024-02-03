@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const AnimatedList = ({ items }) => {
   const [hoveredItem, setHoveredItem] = useState(null);
+  const navigate = useNavigate();
+
+  const HandleClickSeeMore = (item) => {
+    if (Object.keys(item).length > 0) {
+      navigate("/details", { state: { item } });
+    } else {
+      navigate("/");
+    }
+  };
 
   return (
     <div
@@ -34,8 +44,12 @@ const AnimatedList = ({ items }) => {
               <div>
                 <h3>{item.title}</h3>
               </div>
-              <div>
-                <p>{item.description}</p>
+              <div>{/* <p>{item.description}</p> */}</div>
+              <div
+                className="voir_plus"
+                onClick={() => HandleClickSeeMore(item)}
+              >
+                Voir plus
               </div>
             </div>
           )}

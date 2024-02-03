@@ -39,10 +39,19 @@ li:last-child {
     z-index: 1000;
 }
 
+.list-item{
+  width: 100vw; /* ou une autre valeur qui s'adapte à votre mise en page */
+  height: 35vw; /* ajustez cette valeur pour obtenir le ratio d'aspect souhaité */
+  max-width: 100%; /* pour contrôler la taille maximale */
+  max-height: 40%; /* ajustez en fonction du max-width pour maintenir le ratio */
+  min-width: 100%; /* pour contrôler la taille minimale */
+  min-height: 40%; 
+}
+
 .list-item img{
-  width: 100%;
-  min-height: 70%;
-  max-height: 70%;
+  width: 100%; /* Fait en sorte que l'image remplisse la largeur de son conteneur */
+  height: 100%; /* Garde le ratio d'aspect original de l'image */
+  object-fit: cover;
 }
 
 .footer-body{
