@@ -34,7 +34,6 @@ const DetailsPage = () => {
                 height="20%"
                 controls
                 src={item.video}
-                autoPlay
                 muted
                 playsinline
               ></video>

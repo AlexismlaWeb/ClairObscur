@@ -4,13 +4,22 @@ import { useNavigate } from "react-router-dom";
 
 const AnimatedList = ({ items }) => {
   const [hoveredItem, setHoveredItem] = useState(null);
+  // Ajouter un état pour suivre si l'élément a déjà été cliqué
+  const [clickedItem, setClickedItem] = useState(null);
   const navigate = useNavigate();
 
-  const HandleClickSeeMore = (item) => {
-    if (Object.keys(item).length > 0) {
+  const handleItemClick = (item, index) => {
+    // Si l'élément a déjà été cliqué, naviguer
+    if (clickedItem === index) {
       navigate("/details", { state: { item } });
+      // Réinitialiser l'état de l'élément cliqué
+      setClickedItem(null);
     } else {
-      navigate("/");
+      // Sinon, définir cet élément comme cliqué
+      setClickedItem(index);
+      // Optionnel : ajouter un délai pour réinitialiser automatiquement l'état cliqué
+      // pour permettre un nouveau clic après un certain temps
+      // setTimeout(() => setClickedItem(null), 2000); Ajustez le délai selon les besoins
     }
   };
 
@@ -34,25 +43,11 @@ const AnimatedList = ({ items }) => {
           }`}
           whileHover={{ scale: 1.2 }}
           transition={{ duration: 0.5 }}
-          onClick={() => setHoveredItem(index)}
           onHoverStart={() => setHoveredItem(index)}
           onHoverEnd={() => {}} // Ne rien faire lorsque la souris quitte l'élément individuel
+          onClick={() => handleItemClick(item, index)}
         >
           <img src={item.image} alt={`Item ${index + 1}`} />
-          {hoveredItem === index && (
-            <div className="text-overlay">
-              <div>
-                <h3>{item.title}</h3>
-              </div>
-              <div>{/* <p>{item.description}</p> */}</div>
-              <div
-                className="voir_plus"
-                onClick={() => HandleClickSeeMore(item)}
-              >
-                Voir plus
-              </div>
-            </div>
-          )}
         </motion.div>
       ))}
     </div>
