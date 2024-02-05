@@ -25,7 +25,7 @@ const AnimatedList = ({ items }) => {
 
   return (
     <div
-      className="animated-list"
+      className="animated-list my-2"
       onMouseLeave={() => setHoveredItem(null)} // Réinitialiser hoveredItem lorsque la souris quitte la liste
     >
       {items.map((item, index) => (
