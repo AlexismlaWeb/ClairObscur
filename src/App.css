@@ -75,7 +75,7 @@ li:last-child {
 
 .list-item.active{
   cursor: pointer;
-  transform: scale(1.2) !important;
+  transform: scaleY(1.2) !important;
   transition: transform 0.5s;
 }
 

@@ -41,7 +41,7 @@ const AnimatedList = ({ items }) => {
               ? "next"
               : "inactive")
           }`}
-          whileHover={{ scale: 1.2 }}
+          whileHover={{ scaleY: 1.2 }}
           transition={{ duration: 0.5 }}
           onHoverStart={() => setHoveredItem(index)}
           onHoverEnd={() => {}} // Ne rien faire lorsque la souris quitte l'élément individuel
