@@ -8,6 +8,7 @@ body {
     background-image: url('../../../public/Fondsite1.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
 @font-face {
