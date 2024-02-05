@@ -40,7 +40,7 @@ const Header = ({ absolute }) => {
 
   return (
     <div className="menu-body" style={MenuStyle}>
-      <Row className="align-items-center">
+      <Row className="align-items-center gx-0">
         {/* Logo à gauche */}
         <Col xs={4} md={2} onClick={() => handleNavigation("/")}>
           <img
