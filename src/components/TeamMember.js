@@ -23,7 +23,13 @@ const TeamMember = ({ photoPosition, name, description, image }) => {
 
       <Col
         md={photoPosition === "center" ? 12 : 7}
-        xs={photoPosition === "center" ? 12 : 8}
+        xs={
+          photoPosition === "center"
+            ? 12
+            : photoPosition === "left"
+            ? { offset: 1, span: 6 }
+            : 6
+        }
       >
         <h1 className="team-member-name">{name}</h1>
         <p className="team-member-description" style={{ textAlign: "justify" }}>
@@ -32,7 +38,7 @@ const TeamMember = ({ photoPosition, name, description, image }) => {
       </Col>
 
       {photoPosition === "right" && (
-        <Col xs={3}>
+        <Col xs={{ offset: 1, span: 3 }}>
           {/* Photo à droite */}
           <img
             src={
