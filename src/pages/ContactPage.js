@@ -7,10 +7,10 @@ const ContactPage = () => {
   return (
     <div>
       <Header />
-      <Row className="">
+      <Row className="gx-0">
         <h1 className="text-center">CONTACTEZ NOUS</h1>
       </Row>
-      <Row className="d-flex justify-content-center align-items-center mb-5 mt-5">
+      <Row className="d-flex justify-content-center align-items-center mb-5 mt-5 gx-0">
         <Col xs={10} sm={8}>
           <input
             type="text"
@@ -20,7 +20,7 @@ const ContactPage = () => {
           />
         </Col>
       </Row>
-      <Row className="d-flex justify-content-center align-items-center mb-5 mt-5">
+      <Row className="d-flex justify-content-center align-items-center mb-5 mt-5 gx-0">
         <Col xs={10} sm={8}>
           <input
             type="text"
@@ -30,7 +30,7 @@ const ContactPage = () => {
           />
         </Col>
       </Row>
-      <Row className="d-flex justify-content-center align-items-center">
+      <Row className="d-flex justify-content-center align-items-center gx-0">
         <Col xs={10} sm={8}>
           <input
             type="email"
@@ -40,11 +40,11 @@ const ContactPage = () => {
           />
         </Col>
       </Row>
-      <Row className="mt-5 d-flex justify-content-center align-items-center">
+      <Row className="mt-5 d-flex justify-content-center align-items-center gx-0">
         <Col xs={10} sm={8}>
           <h3 className="">VOTRE PROJET</h3>
         </Col>
-        <Row className="mt-4 d-flex justify-content-center align-items-center">
+        <Row className="mt-4 d-flex justify-content-center align-items-center gx-0">
           <Col xs={10} sm={8}>
             <textarea
               className="form-control"
@@ -55,7 +55,7 @@ const ContactPage = () => {
           </Col>
         </Row>
       </Row>
-      <Row className="mt-5">
+      <Row className="mt-5 gx-0">
         <Col className="d-flex justify-content-center align-items-center">
           <Button variant="light">ENVOYER</Button>
         </Col>

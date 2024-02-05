@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 const TeamMember = ({ photoPosition, name, description, image }) => {
   return (
     <Row
-      className="d-flex justify-content-center align-items-center"
+      className="d-flex justify-content-center align-items-center gx-0"
       style={{ marginBlock: "5%" }}
     >
       {photoPosition === "left" && (
