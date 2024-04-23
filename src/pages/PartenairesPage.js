@@ -8,7 +8,6 @@ const PartenairesPage = () => {
         <div>
             <Header/>
             <div className='d-flex align-items-center'>
-                PartenairesPage
             </div>
             <Footer/>
         </div>

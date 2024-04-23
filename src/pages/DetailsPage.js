@@ -12,7 +12,7 @@ const DetailsPage = () => {
     <div>
       <Header />
       {!item.video ? (
-        <div className="d-flex align-items-center justify-content-center mt-4 mb-4 list-item">
+        <div className="d-flex align-items-center justify-content-center mt-5 mb-4 list-item">
           <img src={item.image} alt={"details"} />
         </div>
       ) : (
@@ -42,10 +42,10 @@ const DetailsPage = () => {
         </div>
       )}
       <div className="d-flex align-items-center justify-content-center mb-3 team-member-name">
-        <h2>{item.title}</h2>
+        <h1>{item.title}</h1>
       </div>
       <div
-        className="d-flex align-items-center justify-content-center m-4 team-member-description"
+        className="d-flex align-items-center justify-content-center m-5 team-member-description px-5"
         style={{ textAlign: "justify" }}
       >
         {item.description}

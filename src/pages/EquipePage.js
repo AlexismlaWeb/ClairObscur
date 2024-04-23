@@ -4,34 +4,48 @@ import Footer from "../components/layouts/Footer";
 import TeamMember from "../components/TeamMember";
 
 const EquipePage = () => {
+
+  const teamMembers = [
+    {
+      photoPosition: "right",
+      name: "Emilie Durand",
+      description: "Emilie possède une passion pour le développement durable et une expertise en gestion de projets environnementaux. Son approche innovante en matière de solutions écologiques inspire l'équipe à adopter des pratiques plus vertes.",
+      image: "Item11.png"
+    },
+    {
+      photoPosition: "left",
+      name: "Lucas Moreau",
+      description: "Avec une expérience significative dans le domaine des technologies de l'information, Lucas apporte une perspective technique essentielle à nos projets. Son engagement envers l'excellence opérationnelle est un pilier de notre succès.",
+      image: "Item11.png"
+    },
+    {
+      photoPosition: "right",
+      name: "Sophie Petit",
+      description: "Sophie, spécialiste en marketing digital, utilise sa créativité pour renforcer notre présence en ligne. Son expertise en stratégies de contenu et médias sociaux est cruciale pour notre communication externe.",
+      image: "Item11.png"
+    },
+    {
+      photoPosition: "left",
+      name: "Antoine Girard",
+      description: "Antoine est un architecte logiciel avec une passion pour le code propre et les architectures évolutives. Son travail est fondamental pour maintenir notre infrastructure technologique agile et performante.",
+      image: "Item11.png"
+    }
+  ];
+  
+
   return (
     <div>
       <Header />
       <div>
-        <TeamMember
-          photoPosition={"right"}
-          name="Alexis Mélia"
-          description="Etiam imperdiet eros neque, eget hendrerit ex tempus ac. Nam sollicitudin tempus neque, feugiat feugiat orci maximus ut. Nam iaculis quam vel lacus condimentum, et vestibulum enim faucibus. Duis iaculis ac ipsum sed tincidunt. In sollicitudin felis id lorem consectetur, sed commodo augue porttitor. Nulla consectetur at libero quis convallis. Aenean commodo arcu vel dui volutpat, nec viverra lorem varius. Sed viverra magna dolor, et bibendum arcu scelerisque sit amet. Cras justo purus, ornare sed nisi nec, vulputate mollis libero. Integer quam velit, scelerisque et lacinia eget, porttitor quis metus. Etiam nec augue nec velit scelerisque aliquam et non libero. Vestibulum venenatis varius nibh in molestie."
-          image={"Item11.png"}
-        />
-        <TeamMember
-          photoPosition={"left"}
-          name="Alexis Mélia"
-          description="Etiam imperdiet eros neque, eget hendrerit ex tempus ac. Nam sollicitudin tempus neque, feugiat feugiat orci maximus ut. Nam iaculis quam vel lacus condimentum, et vestibulum enim faucibus. Duis iaculis ac ipsum sed tincidunt. In sollicitudin felis id lorem consectetur, sed commodo augue porttitor. Nulla consectetur at libero quis convallis. Aenean commodo arcu vel dui volutpat, nec viverra lorem varius. Sed viverra magna dolor, et bibendum arcu scelerisque sit amet. Cras justo purus, ornare sed nisi nec, vulputate mollis libero. Integer quam velit, scelerisque et lacinia eget, porttitor quis metus. Etiam nec augue nec velit scelerisque aliquam et non libero. Vestibulum venenatis varius nibh in molestie."
-          image={"Item11.png"}
-        />{" "}
-        <TeamMember
-          photoPosition={"right"}
-          name="Alexis Mélia"
-          description="Etiam imperdiet eros neque, eget hendrerit ex tempus ac. Nam sollicitudin tempus neque, feugiat feugiat orci maximus ut. Nam iaculis quam vel lacus condimentum, et vestibulum enim faucibus. Duis iaculis ac ipsum sed tincidunt. In sollicitudin felis id lorem consectetur, sed commodo augue porttitor. Nulla consectetur at libero quis convallis. Aenean commodo arcu vel dui volutpat, nec viverra lorem varius. Sed viverra magna dolor, et bibendum arcu scelerisque sit amet. Cras justo purus, ornare sed nisi nec, vulputate mollis libero. Integer quam velit, scelerisque et lacinia eget, porttitor quis metus. Etiam nec augue nec velit scelerisque aliquam et non libero. Vestibulum venenatis varius nibh in molestie."
-          image={"Item11.png"}
-        />{" "}
-        <TeamMember
-          photoPosition={"left"}
-          name="Alexis Mélia"
-          description="Etiam imperdiet eros neque, eget hendrerit ex tempus ac. Nam sollicitudin tempus neque, feugiat feugiat orci maximus ut. Nam iaculis quam vel lacus condimentum, et vestibulum enim faucibus. Duis iaculis ac ipsum sed tincidunt. In sollicitudin felis id lorem consectetur, sed commodo augue porttitor. Nulla consectetur at libero quis convallis. Aenean commodo arcu vel dui volutpat, nec viverra lorem varius. Sed viverra magna dolor, et bibendum arcu scelerisque sit amet. Cras justo purus, ornare sed nisi nec, vulputate mollis libero. Integer quam velit, scelerisque et lacinia eget, porttitor quis metus. Etiam nec augue nec velit scelerisque aliquam et non libero. Vestibulum venenatis varius nibh in molestie."
-          image={"Item11.png"}
-        />
+        {teamMembers.map((member, index) => (
+          <TeamMember
+            key={index}
+            photoPosition={member.photoPosition}
+            name={member.name}
+            description={member.description}
+            image={member.image}
+          />
+        ))}
       </div>
       <Footer />
     </div>
