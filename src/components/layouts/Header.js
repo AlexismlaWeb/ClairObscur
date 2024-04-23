@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../App.css";
-import { Row, Col, Dropdown, Button, DropdownButton } from "react-bootstrap";
+import { Row, Col, Dropdown, Button } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
@@ -75,7 +75,7 @@ const Header = ({ absolute }) => {
                 </Button>
                 <Dropdown.Menu className="custom-dropdown-menu">
                   <Dropdown.Item onClick={() => handleNavigation("/")}>
-                    Derniers projets
+                    Nos projets
                   </Dropdown.Item>
                   <Dropdown.Item
                     onClick={() => handleNavigation("/partenaires")}
@@ -101,7 +101,7 @@ const Header = ({ absolute }) => {
                 onClick={() => handleNavigation("/")}
                 style={{ opacity: activePage === "/" ? 1 : 0.5 }}
               >
-                Derniers projets
+                Nos projets
               </li>
               <li
                 className="nav-item"

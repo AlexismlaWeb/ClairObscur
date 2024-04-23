@@ -35,7 +35,7 @@ const DetailsPage = () => {
                 controls
                 src={item.video}
                 muted
-                playsinline
+                playsInline
               ></video>
             ) : null
           ) : null}

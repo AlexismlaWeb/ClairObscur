@@ -23,6 +23,15 @@ li:last-child {
   margin-right: 0;
 }
 
+.table-title, .table-description {
+  width: 35%; /* Ajustez selon vos besoins */
+}
+
+.table-actions {
+  width: 25%; /* Ajustez pour la colonne des actions */
+  text-align: center;
+}
+
 
 @media (max-width: 480px) {
 .menu-body{

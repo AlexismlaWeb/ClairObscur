@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import useWindowSize from "../components/hook/useWindow";
+
 
 const AnimatedList = ({ items }) => {
   const [hoveredItem, setHoveredItem] = useState(null);
   // Ajouter un état pour suivre si l'élément a déjà été cliqué
   const [clickedItem, setClickedItem] = useState(null);
   const navigate = useNavigate();
+  const display = useWindowSize()
 
+  console.log('click',clickedItem)
   const handleItemClick = (item, index) => {
     // Si l'élément a déjà été cliqué, naviguer
     if (clickedItem === index) {
@@ -45,7 +49,7 @@ const AnimatedList = ({ items }) => {
           transition={{ duration: 0.5 }}
           onHoverStart={() => setHoveredItem(index)}
           onHoverEnd={() => {}} // Ne rien faire lorsque la souris quitte l'élément individuel
-          onClick={() => handleItemClick(item, index)}
+          onClick={() => display !== 'laptop' ? handleItemClick(item, index) : navigate("/details", { state: { item } })}
         >
           <img src={item.image} alt={`Item ${index + 1}`} />
         </motion.div>

@@ -6,6 +6,7 @@ import EquipePage from "./pages/EquipePage";
 import PartenairesPage from "./pages/PartenairesPage";
 import ContactPage from "./pages/ContactPage";
 import DetailsPage from "./pages/DetailsPage";
+import AdminPage from "./pages/AdminPage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/notre-equipe" Component={EquipePage} />
         <Route path="/contact" Component={ContactPage} />
         <Route path="/details" Component={DetailsPage} />
+        <Route path="/admin" Component={AdminPage} />
       </Routes>
     </Router>
   );

@@ -9,7 +9,7 @@ const TeamMember = ({ photoPosition, name, description, image }) => {
       style={{ marginBlock: "5%" }}
     >
       {photoPosition === "left" && (
-        <Col xs={3}>
+        <Col xs={3} lg={2}>
           {/* Photo à gauche */}
           <img
             src={
@@ -38,7 +38,7 @@ const TeamMember = ({ photoPosition, name, description, image }) => {
       </Col>
 
       {photoPosition === "right" && (
-        <Col xs={{ offset: 1, span: 3 }}>
+        <Col xs={{ offset: 1, span: 3 }} lg={{ offset: 1, span: 2 }}>
           {/* Photo à droite */}
           <img
             src={
