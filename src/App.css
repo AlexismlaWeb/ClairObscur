@@ -35,15 +35,15 @@ li:last-child {
 
 @media (max-width: 480px) {
 .menu-body{
-  position: relative  !important;
+  /* position: relative  !important; */
   height: 8vh !important;
 }
 }
 
 .menu-body{
-    height: 10vh;
+    height: 11vh;
     font-weight: 700;
-    margin-top: 3%;
+    padding-block: 1%;
     width: 100%;
     z-index: 1000;
 }
@@ -86,6 +86,13 @@ li:last-child {
   cursor: pointer;
   transform: scaleY(1.2) !important;
   transition: transform 0.5s;
+}
+
+.list-item.first{
+  cursor: pointer;
+  transform: scaleY(1.2) !important;
+  transition: transform 0.5s;
+  transform-origin: top;
 }
 
 .list-item.next {

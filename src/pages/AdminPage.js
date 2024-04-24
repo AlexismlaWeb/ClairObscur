@@ -34,7 +34,7 @@ const AdminPage = () => {
       description: "Description 4",
       imgVideo: "vrtist4.svg",
     },
-    { id: 5, title: "Article 5", description: "Description 5", imgVideo: "" },
+    { id: 5, title: "Article 5", description: "Description 5", imgVideo: "MOLUKI.png" },
   ];
   const [itemsState, setItemsState] = useState(items);
   const [itemSelected, setItemSelected] = useState({});
@@ -47,6 +47,7 @@ const AdminPage = () => {
   });
 
   useEffect(() => {
+    console.log(itemsState);
     if (itemSelected.length > 0) {
       console.log(itemSelected);
       setUpdate({
@@ -111,11 +112,11 @@ const AdminPage = () => {
               <td>{item.id}</td>
               <td className="table-title">{item.title}</td>
               <td className="table-description">{item.description}</td>
-              <td className="table-imgVideo">
+              <td className="table-imgVideo" style={{ width: '15%'}}>
                 <img
                   src={`./${item.imgVideo}`}
                   alt={item.title}
-                  style={{ width: "300px", height: "50px" }}
+                  style={{ width: "100%", height: "50%" }}
                 />
               </td>
               <td className="table-actions">

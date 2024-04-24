@@ -29,8 +29,9 @@ const AnimatedList = ({ items }) => {
 
   return (
     <div
-      className="animated-list my-2"
+      className="animated-list"
       onMouseLeave={() => setHoveredItem(null)} // Réinitialiser hoveredItem lorsque la souris quitte la liste
+      style={{ marginBlockStart: "5%" }}
     >
       {items.map((item, index) => (
         <motion.div
@@ -38,7 +39,9 @@ const AnimatedList = ({ items }) => {
           className={`list-item ${
             hoveredItem !== null &&
             (hoveredItem === index
-              ? "active"
+              // Ajouter classe pour le premier élement
+              ? (index === 0 ? "first" : null) : null
+              ? "active"              
               : index === hoveredItem - 1
               ? "previous"
               : index === hoveredItem + 1
