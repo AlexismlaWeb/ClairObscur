@@ -23,6 +23,7 @@ const ContactPage = () => {
   return (
     <div>
       <Header />
+      <div style={{ marginBlock: '4%' }}>
       <Row className="gx-0">
         <h1 className="text-center">CONTACTEZ NOUS</h1>
       </Row>
@@ -82,6 +83,7 @@ const ContactPage = () => {
         </Col>
       </Row>
       </form>
+      </div>
       <div style={{ marginBlockStart: "4%" }}>
         <Footer />
       </div>

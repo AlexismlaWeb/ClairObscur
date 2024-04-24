@@ -91,10 +91,11 @@ const AdminPage = () => {
   return (
     <div>
       <Header />
-      <Row className="gx-0">
+      <div style={{ marginBlock: "3%" }}>
+      <Row className="gx-0" style={{ marginBlockEnd: "2%" }}>
         <h1 className="text-center">Projets Liste</h1>
       </Row>
-      <Table striped bordered hover variant="dark" size="sm">
+      <Table striped bordered hover variant="dark" size="lg">
         <thead>
           <tr>
             <th>Id</th>
@@ -209,6 +210,7 @@ const AdminPage = () => {
           </Button>
         </Modal.Footer>
       </Modal>
+      </div>
     </div>
   );
 };
