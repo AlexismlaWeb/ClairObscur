@@ -97,7 +97,7 @@ li:last-child {
 
 .list-item.next {
   /* autres styles pour .list-item.inactive si nécessaire */
-  transform: scaleY(0.9) !important; /* Réduit la hauteur à 80% */
+  transform: scaleY(0.8) !important; /* Réduit la hauteur à 80% */
   transition: transform 0.5s;
   transform-origin: bottom;
 }
